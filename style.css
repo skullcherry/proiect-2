@@ -1,0 +1,55 @@
+/*footer-card {
+    
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 3px;
+    
+  }
+  
+  html, body, content {
+    height: 98%;
+  }
+  */
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0;
+    background-color: #CAAD7E;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .btn{
+    background-color: #CAAD7E;
+  }
+
+  .sticky-button {
+    display: flex;
+    border: none;
+    color: gray;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+
+    flex-grow: 1;
+  }
+
+  .button-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+
+  }
