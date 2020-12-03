@@ -1,22 +1,9 @@
-/*footer-card {
-    
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0px;
-    padding: 3px;
-    
-  }
-  
-  html, body, content {
-    height: 98%;
-  }
-  */
 
   .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-grow: 1;
+    align-content: stretch;
   }
 
   .footer {
@@ -49,7 +36,14 @@
   .button-card{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+
     flex-grow: 1;
 
+  }
+
+  body{
+    background-color: #ECEBC9;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
   }
