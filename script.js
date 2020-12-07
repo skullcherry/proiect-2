@@ -42,25 +42,25 @@ let clrBtn = document.getElementById('clearDrp');
 clrBtn.addEventListener('click',clearData,true);
 $('#clearDrp').attr('disabled', true);
 
-let dropdown = $('#country-dropdown');
+/*let dropdown = $('#country-dropdown');
 
 dropdown.append('<option selected="true" disabled>Choose Country</option>');
 dropdown.prop('selectedIndex', 0);
+*/
+let dropdown2 = $('#countryList');
+
+dropdown2.append('<option selected="true" disabled>Choose Country</option>');
+dropdown2.prop('selectedIndex', 0);
+
 
 async function getData() {
-  /*const response = await fetch("https://restcountries.eu/rest/v2/all", {
-    "method": "GET",
-  })
-  const dropdownData = await response.json();
-  console.log(dropdownData);
-  */
-  
   
   const dropdownData = 'https://restcountries.eu/rest/v2/all';
 
   $.getJSON(dropdownData, function (data) {
     $.each(data, function (key, entry) {
-      dropdown.append($('<option></option>').attr('value', entry.alpha2Code).text(entry.name));
+      /*dropdown.append($('<option></option>').attr('value', entry.alpha2Code).text(entry.name));*/
+      dropdown2.append($('<option></option>').attr('value', entry.alpha2Code).text(entry.name));
     })
   });
   
@@ -71,14 +71,25 @@ async function getData() {
 
 function clearData(){
 
-  dropdown.empty();
+  /*dropdown.empty();
   dropdown.append('<option selected="true" disabled>Choose Country</option>');
-  dropdown.prop('selectedIndex', 0);
+  dropdown.prop('selectedIndex', 0);*/
+
+  dropdown2.empty();
+  dropdown2.append('<option selected="true" disabled>Choose Country</option>');
+  dropdown2.prop('selectedIndex', 0);
+
+
+
   console.log('dropdown cleared');
   $('#loadDrp').attr('disabled', false);
   $('#clearDrp').attr('disabled', true);
 
 }
+
+
+
+
 
 
 

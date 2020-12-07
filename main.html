@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Proiect 2</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body> 
 
@@ -29,21 +34,10 @@
         <button id="loadDrp" class="btn" >Load Dropdown</button>
         <button id="clearDrp" class="btn">Clear Dropdown</button>
 
-        <select id="country-dropdown" name="country">
-            <!--<option value="0">Select car:</option>
-            <option value="1">Audi</option>
-            <option value="2">BMW</option>
-            <option value="3">Citroen</option>
-            <option value="4">Ford</option>
-            <option value="5">Honda</option>
-            <option value="6">Jaguar</option>
-            <option value="7">Land Rover</option>
-            <option value="8">Mercedes</option>
-            <option value="9">Mini</option>
-            <option value="10">Nissan</option>
-            <option value="11">Toyota</option>
-            <option value="12">Volvo</option> -->
-          </select>
+        <!-- <select id="country-dropdown" name="country"></select> -->
+
+        <input type ="text" id="tags" list="countryList">
+        <datalist id="countryList"></datalist>
         </footer>
 
         <script src="script.js"></script>
